@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GranadaCollectionViewCell" id="gTV-IL-0wX" customClass="GranadaCollectionViewCell" customModule="Booking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Du3-x5-BQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HM1-ob-8dx">
+                                <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HM1-ob-8dx" secondAttribute="trailing" id="1xv-8e-xIr"/>
+                            <constraint firstAttribute="bottom" secondItem="HM1-ob-8dx" secondAttribute="bottom" id="KSy-jh-GSf"/>
+                            <constraint firstItem="HM1-ob-8dx" firstAttribute="leading" secondItem="Du3-x5-BQ6" secondAttribute="leading" id="cBQ-ng-Jav"/>
+                            <constraint firstItem="HM1-ob-8dx" firstAttribute="top" secondItem="Du3-x5-BQ6" secondAttribute="top" id="itU-xw-pvd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Du3-x5-BQ6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UKV-cU-Jgg"/>
+                <constraint firstItem="Du3-x5-BQ6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dVf-Tn-Tqs"/>
+                <constraint firstAttribute="bottom" secondItem="Du3-x5-BQ6" secondAttribute="bottom" id="tYb-la-chV"/>
+                <constraint firstAttribute="trailing" secondItem="Du3-x5-BQ6" secondAttribute="trailing" id="uvu-sx-RoD"/>
+            </constraints>
+            <size key="customSize" width="88" height="40"/>
+            <connections>
+                <outlet property="grandCLabel" destination="HM1-ob-8dx" id="6kX-Bl-bpw"/>
+                <outlet property="grandCView" destination="Du3-x5-BQ6" id="jTG-Z0-lvT"/>
+            </connections>
+            <point key="canvasLocation" x="110.14492753623189" y="99.776785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

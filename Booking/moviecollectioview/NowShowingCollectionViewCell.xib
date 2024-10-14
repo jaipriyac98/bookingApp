@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NowShowingCollectionViewCell" id="gTV-IL-0wX" customClass="NowShowingCollectionViewCell" customModule="Booking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="99" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="99" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-ec-1dr">
+                        <rect key="frame" x="0.0" y="0.0" width="96" height="121"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="7BI-9b-zzX">
+                        <rect key="frame" x="0.0" y="0.0" width="99" height="95"/>
+                        <color key="backgroundColor" red="0.10319564489999999" green="0.143607229" blue="0.33064481620000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3Z-Up-ZNs">
+                        <rect key="frame" x="0.0" y="0.0" width="99" height="95"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NiP-ec-1dr" secondAttribute="trailing" constant="179" id="0WJ-zH-YMW"/>
+                <constraint firstItem="NiP-ec-1dr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2CX-Bp-5Gz"/>
+                <constraint firstItem="7BI-9b-zzX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CY0-fd-ixA"/>
+                <constraint firstAttribute="bottom" secondItem="NiP-ec-1dr" secondAttribute="bottom" id="Fxy-fP-wi2"/>
+                <constraint firstItem="7BI-9b-zzX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KVn-bj-n1S"/>
+                <constraint firstAttribute="trailing" secondItem="7BI-9b-zzX" secondAttribute="trailing" id="Zaj-iV-fMT"/>
+                <constraint firstAttribute="bottom" secondItem="7BI-9b-zzX" secondAttribute="bottom" id="cWu-8A-PWA"/>
+                <constraint firstItem="k3Z-Up-ZNs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ftz-gz-hAT"/>
+                <constraint firstAttribute="trailing" secondItem="k3Z-Up-ZNs" secondAttribute="trailing" id="hlO-P1-ESI"/>
+                <constraint firstItem="k3Z-Up-ZNs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ilD-X7-WNe"/>
+                <constraint firstItem="NiP-ec-1dr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tA1-Wb-hp1"/>
+                <constraint firstAttribute="bottom" secondItem="k3Z-Up-ZNs" secondAttribute="bottom" id="v4G-A6-ciM"/>
+            </constraints>
+            <size key="customSize" width="99" height="95"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="NiP-ec-1dr"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="NowShowingimage" destination="7BI-9b-zzX" id="zIM-3B-z4j"/>
+                <outlet property="nowShowingButton" destination="k3Z-Up-ZNs" id="RE7-GL-Ot8"/>
+            </connections>
+            <point key="canvasLocation" x="229.71014492753625" y="79.352678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="moon" width="299" height="168"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
